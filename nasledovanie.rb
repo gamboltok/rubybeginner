@@ -1,7 +1,9 @@
 class Car
-     def color(color)
-        @color = color
-        return color
+     def color_and_fuel(color, fuel)
+            @color = color
+            @fuel = fuel
+            puts "color is #{color}, fuel is #{fuel}"
+        puts 
     end
 end
 
@@ -9,4 +11,4 @@ class Boat < Car
 end
 
 boat = Boat.new
-    puts "Boat color is #{boat.color("black")}"
+    puts "#{boat.color_and_fuel("black", 100)}"
