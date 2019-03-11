@@ -11,7 +11,13 @@ module Information
                 weight: 30
             }
         }
+        puts "-"*50
+        hash.each{|key, value| puts "key: #{key}, value: #{value}"}
+        puts "-"*50
         hash[:user].each{|key, value| puts "key: #{key}, value: #{value}"}
+        puts "-"*50
+        hash[:stats].each{|key, value| puts "key: #{key}, value: #{value}"}
+        puts "-"*50
     end
 end
 
