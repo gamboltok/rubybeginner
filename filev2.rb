@@ -6,3 +6,8 @@ while count < 3
    f1 << count
 end
 f1.close
+
+
+# read file
+
+f1 = File.open("filev2.txt", "r"){|file|  puts file.read} # r - чтение файла
