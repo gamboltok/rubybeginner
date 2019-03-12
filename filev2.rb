@@ -1,3 +1,4 @@
+#save in file
 f1 = File.open("filev2.txt", "a") #a - дописывать в файл / w - перезаписывать в файл
 
 count = 0
