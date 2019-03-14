@@ -1,9 +1,20 @@
-th1 = Thread.new do
-    puts "Поток 1"
-end
+#first thread
+th1 = Thread.new{
+    count = 0
+    10.times{
+        count +=1
+        puts "Thread №1: iteration #{count}"
+    }
+}
 
-puts th1
+#second thread
+th2 = Thread.new{
+    count = 0
+    10.times{
+        count +=1
+        puts "Thread №2: iteration #{count}"
+    }
+}
 
-Thread.kill(th1)
-sleep 3
-puts th1
+th1.join
+th2.join
